@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison Royale - Premium Lifestyle Store</title>
+    <meta name="description" content="Maison Royale - Your destination for premium kitchen items, human hair, gadgets, clothing & more.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Maison <span>Royale</span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="kitchen-household.html">Kitchen</a></li>
+                <li><a href="human-hair.html">Human Hair</a></li>
+                <li><a href="hair-blends.html">Hair Blends</a></li>
+                <li><a href="hair-accessories.html">Accessories</a></li>
+                <li><a href="gadgets.html">Gadgets</a></li>
+                <li><a href="clothing.html">Clothing</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <button class="mobile-close"><i class="fas fa-times"></i></button>
+        <a href="index.html">Home</a>
+        <a href="kitchen-household.html">Kitchen & Household</a>
+        <a href="human-hair.html">Human Hair</a>
+        <a href="hair-blends.html">Hair Blends</a>
+        <a href="hair-accessories.html">Hair Accessories</a>
+        <a href="gadgets.html">Gadgets</a>
+        <a href="clothing.html">Clothing</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart <span class="cart-count">0</span></a>
+    </div>
+    <div class="overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Welcome to <span>Maison Royale</span></h1>
+            <p>Your premium destination for kitchen essentials, luxury hair, cutting-edge gadgets, and fashionable clothing. Quality meets elegance in every product.</p>
+            <div class="hero-buttons">
+                <a href="#shop-categories" class="btn btn-primary">Shop Now</a>
+                <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-container">
+                <input type="text" class="search-input" id="search-input" placeholder="Search for products...">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+                <div class="search-results" id="search-results"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Products</h2>
+                <div class="gold-line"></div>
+                <p>Handpicked favorites from our premium collection</p>
+            </div>
+            <div class="product-grid" id="featured-products">
+                <!-- Products loaded by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop by Category -->
+    <section class="section-padding" id="shop-categories" style="background: var(--bg-cream);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Shop by Category</h2>
+                <div class="gold-line"></div>
+                <p>Browse our curated collections</p>
+            </div>
+            <div class="category-grid">
+                <a href="kitchen-household.html" class="category-card">
+                    <img src="images/kitchen-household/pots.jpg" alt="Kitchen & Household">
+                    <div class="category-name">Kitchen & Household</div>
+                </a>
+                <a href="human-hair.html" class="category-card">
+                    <img src="images/human-hair/bone-straight.jpg" alt="Human Hair">
+                    <div class="category-name">Human Hair</div>
+                </a>
+                <a href="hair-blends.html" class="category-card">
+                    <img src="images/hair-blends/mixed-texture.jpg" alt="Hair Blends">
+                    <div class="category-name">Hair Blends</div>
+                </a>
+                <a href="hair-accessories.html" class="category-card">
+                    <img src="images/hair-accessories/hair-brush.jpg" alt="Hair Accessories">
+                    <div class="category-name">Hair Accessories</div>
+                </a>
+                <a href="gadgets.html" class="category-card">
+                    <img src="images/gadgets/samsung-s21.jpg" alt="Gadgets">
+                    <div class="category-name">Gadgets</div>
+                </a>
+                <a href="clothing.html" class="category-card">
+                    <img src="images/clothing/native-wear.jpg" alt="Clothing">
+                    <div class="category-name">Clothing</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Gadgets -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Gadgets</h2>
+                <div class="gold-line"></div>
+                <p>Latest tech at unbeatable prices</p>
+            </div>
+            <div class="product-grid" id="featured-gadgets">
+                <!-- Products loaded by JS -->
+            </div>
+            <div class="text-center mt-40">
+                <a href="gadgets.html" class="btn btn-outline">View All Gadgets</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Hair Products -->
+    <section class="section-padding" style="background: var(--bg-cream);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Hair</h2>
+                <div class="gold-line"></div>
+                <p>Luxury hair for every style</p>
+            </div>
+            <div class="product-grid" id="featured-hair">
+                <!-- Products loaded by JS -->
+            </div>
+            <div class="text-center mt-40">
+                <a href="human-hair.html" class="btn btn-outline">View All Hair</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Clothing -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Clothing</h2>
+                <div class="gold-line"></div>
+                <p>Elevate your wardrobe</p>
+            </div>
+            <div class="product-grid" id="featured-clothing">
+                <!-- Products loaded by JS -->
+            </div>
+            <div class="text-center mt-40">
+                <a href="clothing.html" class="btn btn-outline">View All Clothing</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Kitchen -->
+    <section class="section-padding" style="background: var(--bg-cream);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Kitchen</h2>
+                <div class="gold-line"></div>
+                <p>Essentials for the modern home</p>
+            </div>
+            <div class="product-grid" id="featured-kitchen">
+                <!-- Products loaded by JS -->
+            </div>
+            <div class="text-center mt-40">
+                <a href="kitchen-household.html" class="btn btn-outline">View All Kitchen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Us</h2>
+                <div class="gold-line"></div>
+                <p>The Maison Royale difference</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-gem"></i></div>
+                    <h3>Premium Quality</h3>
+                    <p>Every product in our collection is carefully selected to meet the highest standards of quality and craftsmanship.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-truck"></i></div>
+                    <h3>Nationwide Delivery</h3>
+                    <p>We deliver to all locations across the country. Your order reaches you safely and on time.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fab fa-whatsapp"></i></div>
+                    <h3>Easy Ordering</h3>
+                    <p>Order directly through WhatsApp with a single tap. Quick, simple, and hassle-free shopping.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Secure Shopping</h3>
+                    <p>Your transactions are safe with our trusted WhatsApp ordering system and verified payment methods.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Preview -->
+    <section class="section-padding" style="background: var(--bg-cream);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <div class="gold-line"></div>
+                <p>Quick answers to common questions</p>
+            </div>
+            <div class="faq-container" style="max-width:800px;margin:0 auto;">
+                <div class="faq-item">
+                    <button class="faq-question">How do I place an order? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer"><p>Add products to your cart and click "Checkout Via WhatsApp". We'll handle the rest!</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How does Preorder From China work? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer"><p>Click the "Preorder" button and a WhatsApp message with the product details will be generated automatically.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How long does delivery take? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer"><p>Local products: 2-5 business days. China preorders: 2-4 weeks.</p></div>
+                </div>
+            </div>
+            <div class="text-center mt-40">
+                <a href="faq.html" class="btn btn-primary">View All FAQs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get in Touch</h2>
+                <div class="gold-line"></div>
+                <p>We'd love to hear from you</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>+234 707 865 9307</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+234 707 865 9307</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@maisonroyale.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Premium Avenue, Lagos, Nigeria</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" id="contact-name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label>Your Email</label>
+                        <input type="email" id="contact-email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea id="contact-message" placeholder="How can we help you?"></textarea>
+                    </div>
+                    <button class="btn btn-primary" onclick="sendWhatsAppFromForm()">
+                        <i class="fab fa-whatsapp"></i> Send via WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">Maison <span>Royale</span></a>
+                    <p>Your premium destination for quality kitchen items, luxury hair products, cutting-edge gadgets, and fashionable clothing.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="gadgets.html">Gadgets</a>
+                    <a href="human-hair.html">Human Hair</a>
+                    <a href="clothing.html">Clothing</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Categories</h4>
+                    <a href="kitchen-household.html">Kitchen</a>
+                    <a href="hair-blends.html">Hair Blends</a>
+                    <a href="hair-accessories.html">Accessories</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="faq.html">Help Center</a>
+                    <a href="#" onclick="contactViaWhatsApp();return false;">WhatsApp</a>
+                    <a href="cart.html">Your Cart</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Maison Royale. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <div class="back-to-top"><i class="fas fa-arrow-up"></i></div>
+
+    <!-- Scripts -->
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/whatsapp.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Initialize home page content
+        document.addEventListener('DOMContentLoaded', function() {
+            renderHomeFeatured();
+            renderFeaturedProducts();
+
+            // Initialize FAQ on home page
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item && otherItem.classList.contains('active')) {
+                                otherItem.classList.remove('active');
+                            }
+                        });
+                        item.classList.toggle('active');
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
